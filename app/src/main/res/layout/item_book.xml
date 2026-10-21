@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:drawable/dialog_frame"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên sách"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tvBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tác giả: ..."
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical">
+
+        <!-- Thẻ loại: màu xanh ngọc nhạt giống mẫu -->
+        <TextView
+            android:id="@+id/tvBookCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thể loại"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="#D0E8E3"
+            android:textColor="#005B4F"
+            android:textSize="12sp"/>
+
+        <!-- Trạng thái đọc -->
+        <TextView
+            android:id="@+id/tvBookStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginStart="8dp"
+            android:background="#FFE5CC"
+            android:textColor="#B35900"
+            android:textSize="12sp"/>
+
+        <RatingBar
+            android:id="@+id/rbBookRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="1"
+            android:progressTint="#FFC107"
+            android:secondaryProgressTint="#FFC107" />
+    </LinearLayout>
+</LinearLayout>
